@@ -1,4 +1,5 @@
 using Crud_Operations_in_Asp.Net_Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,22 +7,25 @@ namespace Crud_Operations_in_Asp.Net_Core.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+		private readonly AssignmentDbContext context;
+		public HomeController(AssignmentDbContext _context)
+		{
+			this.context = _context;
+		}
 
-        public HomeController(ILogger<HomeController> logger)
+		public IActionResult Index()
         {
-            _logger = logger;
-        }
+			var prdList = context.TblProducts.ToList();
 
-        public IActionResult Index()
-        {
-            return View();
+			return View(prdList);
         }
 
         public IActionResult Products()
         {
-            return View();
-        }
+			var prdList = context.TblProducts.ToList();
+
+			return View(prdList);
+		}
 
 		public IActionResult About()
 		{
@@ -30,7 +34,9 @@ namespace Crud_Operations_in_Asp.Net_Core.Controllers
 
 		public IActionResult Services()
 		{
-			return View();
+			var prdList = context.TblProducts.ToList();
+
+			return View(prdList);
 		}
 
 		public IActionResult Blog()
@@ -56,12 +62,6 @@ namespace Crud_Operations_in_Asp.Net_Core.Controllers
         public IActionResult Thankyou()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

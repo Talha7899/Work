@@ -597,6 +597,26 @@
       "PackagePath": "staticwebassets\\scss\\style.scss"
     },
     {
+      "Id": "D:\\Asp.Net Core MVC\\Aptech Work\\Crud_Operations\\Crud_Operations_in_Asp.Net_Core\\wwwroot\\uploads\\242901042918product-1.png",
+      "PackagePath": "staticwebassets\\uploads\\242901042918product-1.png"
+    },
+    {
+      "Id": "D:\\Asp.Net Core MVC\\Aptech Work\\Crud_Operations\\Crud_Operations_in_Asp.Net_Core\\wwwroot\\uploads\\243304033327couch.png",
+      "PackagePath": "staticwebassets\\uploads\\243304033327couch.png"
+    },
+    {
+      "Id": "D:\\Asp.Net Core MVC\\Aptech Work\\Crud_Operations\\Crud_Operations_in_Asp.Net_Core\\wwwroot\\uploads\\243304033345product-1.png",
+      "PackagePath": "staticwebassets\\uploads\\243304033345product-1.png"
+    },
+    {
+      "Id": "D:\\Asp.Net Core MVC\\Aptech Work\\Crud_Operations\\Crud_Operations_in_Asp.Net_Core\\wwwroot\\uploads\\243801043853product-2.png",
+      "PackagePath": "staticwebassets\\uploads\\243801043853product-2.png"
+    },
+    {
+      "Id": "D:\\Asp.Net Core MVC\\Aptech Work\\Crud_Operations\\Crud_Operations_in_Asp.Net_Core\\wwwroot\\uploads\\244504044542product-2.png",
+      "PackagePath": "staticwebassets\\uploads\\244504044542product-2.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Crud_Operations_in_Asp.Net_Core.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
